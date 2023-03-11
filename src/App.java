@@ -50,5 +50,14 @@ public class App {
         suvFlex.viaja(100);
         System.out.println(suvFlex+"\n");
 
+        // Solução da questão 5
+        MotorBasico motorEcono = new MotorEcono();
+        TanqueCombustivel tanqueEcono = new TanqueCombustivel(TipoCombustivel.GASOLINA, 55);
+        Carro econo = new Carro("Econo", motorEcono, tanqueEcono);
+        econo.abastece(TipoCombustivel.GASOLINA, 55);
+        econo.viaja(550);
+        System.out.println(econo+"\n");
+        econo.viaja(100);
+        System.out.println(econo+"\n");
     }
 }

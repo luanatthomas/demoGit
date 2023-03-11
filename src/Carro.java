@@ -5,7 +5,6 @@ public class Carro {
     private ITanqueCombustivel tanqueCombustivel;
 
     public Carro(String modelo, IMotor motor, ITanqueCombustivel tanqueCombustivel) {
-        this.modelo = modelo;
         this.motor = motor;
         this.tanqueCombustivel = tanqueCombustivel;
     }
